@@ -5,8 +5,7 @@ EAPI=7
 
 DESCRIPTION="Short and Sweet"
 HOMEPAGE="https://github.com/AntarcticanWaffles"
-SRC_URI="https://raw.githubusercontent.com/AntarcticanWaffles/curlme/main/helloworld.c
-	https://raw.githubusercontent.com/AntarcticanWaffles/curlme/main/Makefile"
+SRC_URI="https://github.com/AntarcticanWaffles/curlme/raw/main/helloebuild.tar.gz"
 
 LICENSE=""
 SLOT="0"
@@ -15,8 +14,6 @@ KEYWORDS="amd64 ~x86"
 DEPEND=""
 RDEPEND="${DEPEND}"
 BDEPEND=""
-
-S="${WORKDIR}/${PN}-${P}"
 
 src_compile() {
 	emake helloworld || die "make failed lmao"

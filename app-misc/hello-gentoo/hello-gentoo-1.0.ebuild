@@ -16,6 +16,8 @@ DEPEND=""
 RDEPEND="${DEPEND}"
 BDEPEND=""
 
+S="${WORKDIR}/${PN}-${P}"
+
 src_compile() {
 	emake helloworld || die "make failed lmao"
 }

@@ -1,0 +1,12 @@
+diff --git a/main.c b/main.c
+index 77eab80..e21de1a 100644
+--- a/main.c
++++ b/main.c
+@@ -36,6 +36,7 @@
+  * The output will go to outfile if specified, stdout otherwise.
+  */
+ 
++#include <string.h>
+ #include "snow.h"
+ 
+ 

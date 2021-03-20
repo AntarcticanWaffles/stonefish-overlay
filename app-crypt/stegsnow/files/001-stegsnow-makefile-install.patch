@@ -1,0 +1,30 @@
+diff --git a/Makefile b/Makefile
+index 1fcc80d..4f4da94 100644
+--- a/Makefile
++++ b/Makefile
+@@ -16,11 +16,25 @@
+ CC     ?= gcc
+ CFLAGS ?= -O
+ 
++PREFIX=/usr/bin
++
+ OBJ =		main.o encrypt.o ice.o compress.o encode.o
+ 
++.PHONY: snow
+ snow:		$(OBJ)
+ 		$(CC) $(CPPFLAGS) $(CFLAGS) $(LDFLAGS) -o $@ $(OBJ)
+ 
++.PHONY: clean
+ clean:
+ 		rm -f $(OBJ) snow
++
++.PHONY: install
++install: snow
++	mkdir -p $(DESTDIR)$(PREFIX)
++	cp $< $(DESTDIR)$(PREFIX)/snow
++
++.PHONY: uninstall
++uninstall:
++	rm -f $(DESTDIR)$(PREFIX)/snow
++
+ # End of file

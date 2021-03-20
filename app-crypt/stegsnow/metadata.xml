@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM 'http://www.gentoo.org/dtd/metadata.dtd'>
+<pkgmetadata>
+	<maintainer type="person">
+		<email>53932921+AntarcticanWaffles@users.noreply.github.com</email>
+	</maintainer>
+	<longdescription>The program SNOW is used to conceal messages in ASCII text by appending whitespace to the end of lines. Because spaces and tabs are generally not visible in text viewers, the message is effectively hidden from casual observers. And if the built-in encryption is used, the message cannot be read even if it is detected.</longdescription>
+	<use>
+		<flag name="upstream-name">Install program as "snow" instead of the more common "stegsnow"</flag>
+	</use>
+</pkgmetadata>

@@ -1,1 +1,3 @@
-First commit, for a test gentoo overlay
+My personal gentoo overlay, still learning to write ebuilds...
+
+Now featuring stegsnow, a program occasionally seen in ctfs.

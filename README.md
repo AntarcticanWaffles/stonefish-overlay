@@ -1,5 +1,7 @@
 My personal gentoo overlay, still learning to write ebuilds...
-This overlay is quite unstable...
+Now slightly less unstable, as I test ebuilds locally now... as you should.
 
-Now featuring stegsnow, a program occasionally seen in ctfs.
-Also testing pgo enabled python.
+FEATURING:
+Stegsnow, a program occasionally seen in ctfs.
+PGO enabled python, taken from lto-overlay and rebased to current gentoo ebuilds.
+The latest version of kakoune
